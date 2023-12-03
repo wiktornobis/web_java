@@ -21,6 +21,6 @@ public class ClubController {
     public String listClubs(Model model) {
         List<ClubDto> clubs = clubService.findAllClubs();
         model.addAttribute("clubs", clubs);
-        return "clubs-lists";
+        return "clubs-list";
     }
 }
